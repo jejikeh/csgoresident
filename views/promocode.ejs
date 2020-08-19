@@ -1,0 +1,74 @@
+<%- include ('layout/header.ejs') %>
+<div class="col-md-9 col-xl-10">
+  <h1 class="h3 mb-3">Referals</h1>
+  <div class="tab-content">
+    <div class="card">
+  <form method="POST">
+    <div class="row mx-md-n0">
+      <div class="col px-md-2">
+        <div class="form-inline">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="p-3 bg-green">
+                <h5>Enter Promo Code</h5>
+                <input
+                  type="text"
+                  name="freecode"
+                  class="form-control mr-sm-3"
+                />
+                <button class="btn btn-outline-dark" type="submit11">
+                  Подтеворжд
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col px-md-2">
+        <div class="form-inline">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="p-3 bg-green">
+                <h5>Create Promo Code</h5>
+                <input type="text" name="code" class="form-control mr-sm-3" />
+
+                <button class="btn btn-outline-dark" type="submit">
+                  потврердид
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  <div class="container">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">
+        в истерике кружилась мама валя на заднем фоне замер папа толя
+      </p>
+      <footer class="blockquote-footer">
+        Макс <cite title="Source Title">Корж</cite>
+      </footer>
+    </blockquote>
+  </div>
+  </div>
+  <div class="card">
+  <table  class="table">
+    <thead>
+      <tr>
+        <th scope="col">Приглашенных</th>
+        <th scope="col">Заработанно</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <%- include ('layout/footer.ejs') %>
+
