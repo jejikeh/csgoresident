@@ -7,7 +7,6 @@ const profile = require("../models/profile");
 const passport = require("passport");
 const session = require("express-session");
 const SteamStrategy = require("./auth/index");
-const e = require("express");
 
 var bonusbalace;
 

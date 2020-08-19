@@ -41,30 +41,6 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <nav id="sidebar" class="sidebar">
-        <div class="sidebar-content js-simplebar">
-          <div class="card-body h-100">
-            <div class="row">
-              <div class="col-6">
-                <h3>Сообщения</h3>
-                <!-- Вывод всех сообщений будет здесь -->
-                <div id="messages"></div>
-              </div>
-          <div class="card-body">
-            <!-- Форма для получения сообщений и имени -->
-            <form id="messForm">
-              <div class="row">
-              <label for="message">Сообщение</label>
-              <textarea type="text" name="message" id="m" class="form" placeholder="Введите сообщение"></textarea>
-              <p id="j"></p>
-              
-              <textarea type="text" name="photo" id="b" class="form" placeholder="Введите photo"></textarea>
-              <br>
-              <input type="submit" value="send" class="btn btn-danger">
-            </div>
-            </form>
-          </div></div>
           
  </div>
         </div>
@@ -77,12 +53,12 @@
   
         <form class="form-inline d-none d-sm-inline-block">
           <div class="input-group input-group-navbar">
-            <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+            <div class="row">
+              <div class="navbar-collapse collapse">
+            <a href="/" class="navbar-brand"><span class="align-middle">CSGORESIDENT</span></a>
+              <a class="navbar-link">Double</a>
             <div class="input-group-append">
-              <button class="btn" type="button">
-                <i class="align-middle" data-feather="search"></i>
-              </button>
-            </div>
+            </div></div></div>
           </div>
         </form>
   
@@ -91,9 +67,7 @@
             
             
             <li class="nav-item dropdown">
-              <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
-                <i class="align-middle" data-feather="settings"></i>
-              </a>
+              
               <form class="form-inline">
                 <% if (!user) { %>
                   <button class="btn btn-outline-success" type="submit">
@@ -105,21 +79,36 @@
                     <li><a class="nav-link" href="/promocode" id="name1"><%= user.displayName %></a></li><img src="<%= user.photos[2].value %>" class="rounded" width="38" height="38" /> <button class="btn btn-outline-success" type="button"><a href="logout">Logout</a></button></li>
                   <% } %>
               </form>
-            </ul>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
-                <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
-                <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Log out</a>
-              </div>
-            </li>
-          </ul>
         </div>
       </nav>
+      <div class="row">
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-content js-simplebar">
+            <a href="/" class="sidebar-brand"><span class="align-middle">Chat</span></a>
+            <div class="card-body h-100">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Сообщения</h3>
+                  <!-- Вывод всех сообщений будет здесь -->
+                  <div id="messages"></div>
+                </div>
+            <div class="card-body">
+              <!-- Форма для получения сообщений и имени -->
+              <form id="messForm">
+                <div class="row">
+                <label for="message">Сообщение</label>
+                <textarea type="text" name="message" id="m" class="form" placeholder="Введите сообщение"></textarea>
+                <p id="j"></p>
+                
+                <textarea type="text" name="photo" id="b" class="form" placeholder="Введите photo"></textarea>
+                <br>
+                <input type="submit" value="send" class="btn btn-danger">
+              </div>
+              </form>
+            </div></div></div></div></nav>
       <main class="content">
+        
         <div class="container-fluid p-0">
+          
   </body>
 </html>

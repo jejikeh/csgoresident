@@ -11689,7 +11689,7 @@ body {
 .sidebar-content {
   transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out,
     margin-right 0.35s ease-in-out, right 0.35s ease-in-out;
-  background: #222e3c;
+  background: #000000;
 }
 .sidebar-content {
   display: flex;
@@ -16533,7 +16533,7 @@ a {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font awesome\5 Free;
   font-style: normal;
   font-weight: 400;
   font-display: auto;
@@ -16551,7 +16551,7 @@ a {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font awesome\5 Free;
   font-style: normal;
   font-weight: 900;
   font-display: auto;
@@ -16565,7 +16565,7 @@ a {
 .fa,
 .far,
 .fas {
-  font-family: Font Awesome\5 Free;
+  font-family: Font awesome\5 Free;
 }
 .fa,
 .fas {
